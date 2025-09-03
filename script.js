@@ -53,32 +53,21 @@ function updateProgress() {
     let answeredQuestions = 0;
     
     // 检查主要问题（q1-q10）
-    for (let i = 1; i <= totalQuestions; i++) {
+    for (let i = 1; i <= 10; i++) {
         const radios = document.querySelectorAll(`input[name="q${i}"]`);
         if (Array.from(radios).some(radio => radio.checked)) {
             answeredQuestions++;
         }
     }
     
-    // 检查email是否填写
-    const emailInput = document.querySelector('input[name="email"]');
-    const hasEmail = emailInput.value.trim() !== '';
-    
-    if (hasEmail) {
-        answeredQuestions += 1; // 额外加1分用于email
-        totalQuestions = 11; // 更新总题数
-    } else {
-        totalQuestions = 10;
-    }
-    
-    currentProgress = (answeredQuestions / totalQuestions) * 100;
+    currentProgress = (answeredQuestions / 10) * 100;
     
     // 更新进度条
     progressFill.style.width = currentProgress + '%';
     progressPercentage.textContent = Math.round(currentProgress);
     
-    // 更新提交按钮状态
-    const canSubmit = answeredQuestions >= 10 && hasEmail; // 至少完成主要问题和email
+    // 更新提交按钮状态（只需要完成主要10题）
+    const canSubmit = answeredQuestions >= 10;
     submitBtn.disabled = !canSubmit;
     
     if (canSubmit) {
@@ -143,14 +132,11 @@ function validateForm() {
         }
     }
     
-    // 验证email
+    // 验证email（僅在有填寫時檢查格式）
     const emailInput = document.querySelector('input[name="email"]');
     const emailValue = emailInput.value.trim();
-    if (!emailValue) {
-        errors.push('请填写email地址');
-        isValid = false;
-    } else if (!isValidEmail(emailValue)) {
-        errors.push('请填写有效的email地址');
+    if (emailValue && !isValidEmail(emailValue)) {
+        errors.push('請填寫有效的email地址');
         isValid = false;
     }
     
@@ -401,6 +387,15 @@ function resetForm() {
     if (existingError) {
         existingError.remove();
     }
+}
+
+// 關閉結果視窗
+function closeResult() {
+    // 隱藏結果視窗
+    resultDiv.classList.add('hidden');
+    
+    // 滾動到頂部
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // 添加CSS动画

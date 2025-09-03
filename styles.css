@@ -448,6 +448,25 @@ input[type="email"]:focus {
     font-weight: 500;
 }
 
+.close-btn {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    font-family: inherit;
+}
+
+.close-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(116, 185, 255, 0.4);
+}
+
 .reset-btn {
     background: linear-gradient(135deg, #74b9ff, #0984e3);
     color: white;

@@ -220,12 +220,21 @@
 
                 <div class="question bonus">
                     <label class="question-text">B. 你最重要的三個信念或價值觀是？</label>
-                    <textarea name="beliefs" rows="4" placeholder="請簡單描述您的三個重要信念或價值觀..."></textarea>
+                    <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; margin: 15px 0; border: 1px solid rgba(255,255,255,0.2);">
+                        <p style="margin: 0 0 10px 0; font-size: 0.9em; opacity: 0.9;">💡 參考範例：</p>
+                        <p style="margin: 0; font-size: 0.85em; line-height: 1.4; opacity: 0.8;">
+                            • 誠實與正直、家庭與愛、持續學習與成長<br>
+                            • 同理心、責任感、追求卓越<br>
+                            • 自由與獨立、公平正義、創新與創意<br>
+                            • 健康與平衡、感恩與知足、幫助他人
+                        </p>
+                    </div>
+                    <textarea name="beliefs" rows="4" placeholder="例如：誠實正直、家庭關愛、持續成長..."></textarea>
                 </div>
 
                 <div class="question bonus">
-                    <label class="question-text">C. Email（用於回信與成績回饋）</label>
-                    <input type="email" name="email" placeholder="your.email@example.com" required>
+                    <label class="question-text">C. Email（若想要收到一封針對您問卷的回信,歡迎填寫）</label>
+                    <input type="email" name="email" placeholder="your.email@example.com（選填）">
                 </div>
             </div>
 
@@ -249,7 +258,7 @@
                 <div class="encouragement">
                     <p>🌱 記住，了解自己是成長的第一步，每個人都值得被理解和關愛。</p>
                 </div>
-                <button onclick="resetForm()" class="reset-btn">重新填寫</button>
+                <button onclick="closeResult()" class="close-btn">關閉</button>
             </div>
         </div>
     </div>
