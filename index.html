@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOPO 自我評估問卷</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-decoration">🌸</div>
+            <h1>FOPO 自我評估問卷</h1>
+            <p class="subtitle">Fear of Other People's Opinions</p>
+            <p class="description">請依據您的真實感受填寫，這將幫助您更好地了解自己</p>
+            <div class="header-decoration">🌸</div>
+        </header>
+
+        <form id="fopoForm" class="questionnaire">
+            <div class="instructions">
+                <h2>📝 填寫說明</h2>
+                <p>請根據以下量表選擇最符合您感受的選項：</p>
+                <div class="scale-guide">
+                    <span class="scale-item">1 = 完全不同意</span>
+                    <span class="scale-item">2 = 不太同意</span>
+                    <span class="scale-item">3 = 普通</span>
+                    <span class="scale-item">4 = 有點同意</span>
+                    <span class="scale-item">5 = 非常同意</span>
+                </div>
+                <p class="note">💡 分數越高表示 FOPO 傾向越重</p>
+            </div>
+
+            <div class="main-questions">
+                <h2>🌟 主要問題</h2>
+                
+                <div class="question-group">
+                    <div class="question">
+                        <label class="question-text">1. 發文/傳訊息後，我會頻繁查看回覆或讚數。</label>
+                        <div class="rating-scale">
+                            <input type="radio" id="q1_1" name="q1" value="1" required>
+                            <label for="q1_1">1</label>
+                            <input type="radio" id="q1_2" name="q1" value="2">
+                            <label for="q1_2">2</label>
+                            <input type="radio" id="q1_3" name="q1" value="3">
+                            <label for="q1_3">3</label>
+                            <input type="radio" id="q1_4" name="q1" value="4">
+                            <label for="q1_4">4</label>
+                            <input type="radio" id="q1_5" name="q1" value="5">
+                            <label for="q1_5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <label class="question-text">2. 在重要場合前，我常腦補各種最壞情境。</label>
+                        <div class="rating-scale">
+                            <input type="radio" id="q2_1" name="q2" value="1" required>
+                            <label for="q2_1">1</label>
+                            <input type="radio" id="q2_2" name="q2" value="2">
+                            <label for="q2_2">2</label>
+                            <input type="radio" id="q2_3" name="q2" value="3">
+                            <label for="q2_3">3</label>
+                            <input type="radio" id="q2_4" name="q2" value="4">
+                            <label for="q2_4">4</label>
+                            <input type="radio" id="q2_5" name="q2" value="5">
+                            <label for="q2_5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <label class="question-text">3. 表現不佳時，我會懷疑自己這個人不夠好。</label>
+                        <div class="rating-scale">
+                            <input type="radio" id="q3_1" name="q3" value="1" required>
+                            <label for="q3_1">1</label>
+                            <input type="radio" id="q3_2" name="q3" value="2">
+                            <label for="q3_2">2</label>
+                            <input type="radio" id="q3_3" name="q3" value="3">
+                            <label for="q3_3">3</label>
+                            <input type="radio" id="q3_4" name="q3" value="4">
+                            <label for="q3_4">4</label>
+                            <input type="radio" id="q3_5" name="q3" value="5">
+                            <label for="q3_5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <label class="question-text">4. 我常把決策建立在「別人會怎麼看」。</label>
+                        <div class="rating-scale">
+                            <input type="radio" id="q4_1" name="q4" value="1" required>
+                            <label for="q4_1">1</label>
+                            <input type="radio" id="q4_2" name="q4" value="2">
+                            <label for="q4_2">2</label>
+                            <input type="radio" id="q4_3" name="q4" value="3">
+                            <label for="q4_3">3</label>
+                            <input type="radio" id="q4_4" name="q4" value="4">
+                            <label for="q4_4">4</label>
+                            <input type="radio" id="q4_5" name="q4" value="5">
+                            <label for="q4_5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <label class="question-text">5. 收到模糊或負面回饋，我會反覆回想很久。</label>
+                        <div class="rating-scale">
+                            <input type="radio" id="q5_1" name="q5" value="1" required>
+                            <label for="q5_1">1</label>
+                            <input type="radio" id="q5_2" name="q5" value="2">
+                            <label for="q5_2">2</label>
+                            <input type="radio" id="q5_3" name="q5" value="3">
+                            <label for="q5_3">3</label>
+                            <input type="radio" id="q5_4" name="q5" value="4">
+                            <label for="q5_4">4</label>
+                            <input type="radio" id="q5_5" name="q5" value="5">
+                            <label for="q5_5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <label class="question-text">6. 為了避免出錯，我常選擇安全牌或乾脆不做。</label>
+                        <div class="rating-scale">
+                            <input type="radio" id="q6_1" name="q6" value="1" required>
+                            <label for="q6_1">1</label>
+                            <input type="radio" id="q6_2" name="q6" value="2">
+                            <label for="q6_2">2</label>
+                            <input type="radio" id="q6_3" name="q6" value="3">
+                            <label for="q6_3">3</label>
+                            <input type="radio" id="q6_4" name="q6" value="4">
+                            <label for="q6_4">4</label>
+                            <input type="radio" id="q6_5" name="q6" value="5">
+                            <label for="q6_5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <label class="question-text">7. 我很在乎陌生人或不熟的人怎麼看我。</label>
+                        <div class="rating-scale">
+                            <input type="radio" id="q7_1" name="q7" value="1" required>
+                            <label for="q7_1">1</label>
+                            <input type="radio" id="q7_2" name="q7" value="2">
+                            <label for="q7_2">2</label>
+                            <input type="radio" id="q7_3" name="q7" value="3">
+                            <label for="q7_3">3</label>
+                            <input type="radio" id="q7_4" name="q7" value="4">
+                            <label for="q7_4">4</label>
+                            <input type="radio" id="q7_5" name="q7" value="5">
+                            <label for="q7_5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <label class="question-text">8. 我做完一件事後，會長時間檢討自己的每一句話。</label>
+                        <div class="rating-scale">
+                            <input type="radio" id="q8_1" name="q8" value="1" required>
+                            <label for="q8_1">1</label>
+                            <input type="radio" id="q8_2" name="q8" value="2">
+                            <label for="q8_2">2</label>
+                            <input type="radio" id="q8_3" name="q8" value="3">
+                            <label for="q8_3">3</label>
+                            <input type="radio" id="q8_4" name="q8" value="4">
+                            <label for="q8_4">4</label>
+                            <input type="radio" id="q8_5" name="q8" value="5">
+                            <label for="q8_5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <label class="question-text">9. 我常以他人的評價來判定自己的價值。</label>
+                        <div class="rating-scale">
+                            <input type="radio" id="q9_1" name="q9" value="1" required>
+                            <label for="q9_1">1</label>
+                            <input type="radio" id="q9_2" name="q9" value="2">
+                            <label for="q9_2">2</label>
+                            <input type="radio" id="q9_3" name="q9" value="3">
+                            <label for="q9_3">3</label>
+                            <input type="radio" id="q9_4" name="q9" value="4">
+                            <label for="q9_4">4</label>
+                            <input type="radio" id="q9_5" name="q9" value="5">
+                            <label for="q9_5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <label class="question-text">10. 面對批評時，我會想切斷關係或躲開。</label>
+                        <div class="rating-scale">
+                            <input type="radio" id="q10_1" name="q10" value="1" required>
+                            <label for="q10_1">1</label>
+                            <input type="radio" id="q10_2" name="q10" value="2">
+                            <label for="q10_2">2</label>
+                            <input type="radio" id="q10_3" name="q10" value="3">
+                            <label for="q10_3">3</label>
+                            <input type="radio" id="q10_4" name="q10" value="4">
+                            <label for="q10_4">4</label>
+                            <input type="radio" id="q10_5" name="q10" value="5">
+                            <label for="q10_5">5</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bonus-questions">
+                <h2>🎁 加分題（非計分）</h2>
+                
+                <div class="question bonus">
+                    <label class="question-text">A. 你的自我價值主要放在哪些領域？（可複選）</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="selfValue" value="工作表現"> 工作表現</label>
+                        <label><input type="checkbox" name="selfValue" value="金錢"> 金錢</label>
+                        <label><input type="checkbox" name="selfValue" value="外表"> 外表</label>
+                        <label><input type="checkbox" name="selfValue" value="人際"> 人際</label>
+                        <label><input type="checkbox" name="selfValue" value="社群數字"> 社群數字</label>
+                        <label><input type="checkbox" name="selfValue" value="學業"> 學業</label>
+                        <label><input type="checkbox" name="selfValue" value="道德"> 道德</label>
+                        <label><input type="checkbox" name="selfValue" value="家庭"> 家庭</label>
+                        <label><input type="checkbox" name="selfValue" value="信仰"> 信仰</label>
+                    </div>
+                    <div class="other-input">
+                        <label>其他：<input type="text" name="selfValueOther" placeholder="請填寫..."></label>
+                    </div>
+                </div>
+
+                <div class="question bonus">
+                    <label class="question-text">B. 你最重要的三個信念或價值觀是？</label>
+                    <textarea name="beliefs" rows="4" placeholder="請簡單描述您的三個重要信念或價值觀..."></textarea>
+                </div>
+
+                <div class="question bonus">
+                    <label class="question-text">C. Email（用於回信與成績回饋）</label>
+                    <input type="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+                <div class="progress-text">完成度: <span id="progressPercentage">0</span>%</div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" id="submitBtn" class="submit-btn">
+                    <span>提交問卷</span> ✨
+                </button>
+            </div>
+        </form>
+
+        <div id="result" class="result hidden">
+            <div class="result-card">
+                <h2>📊 您的 FOPO 評估結果</h2>
+                <div id="scoreDisplay" class="score-display"></div>
+                <div id="interpretation" class="interpretation"></div>
+                <div class="encouragement">
+                    <p>🌱 記住，了解自己是成長的第一步，每個人都值得被理解和關愛。</p>
+                </div>
+                <button onclick="resetForm()" class="reset-btn">重新填寫</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
