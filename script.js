@@ -12,7 +12,7 @@ let totalQuestions = 10; // 主要问题数量
 let currentProgress = 0;
 
 // Webhook 配置
-const WEBHOOK_URL = 'https://joshtsang0916.zeabur.app/webhook-test/fopo123';
+const WEBHOOK_URL = 'https://joshtsang0916.zeabur.app/webhook/fopo123';
 
 // 初始化
 document.addEventListener('DOMContentLoaded', function() {
